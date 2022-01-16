@@ -239,12 +239,13 @@ img {
 }
 
 @media (max-width: 450px) {
-    .box {
-        height: 230px;
-    }
 
     .project-img{
-        width: 4rem !important;
+        width: 3.8rem !important;
+    }
+
+    .box {
+        height: 14rem !important;
     }
 
 }
@@ -253,9 +254,16 @@ img {
     .box-title{
         font-size: 23px;
     }
+    .project-img{
+        width: 3rem !important;
+    }
+
+    .box {
+        height: 12rem !important;
+    }
 }
 
-@media (min-width:376px){
+@media (min-width:375px){
     .box-title{
         font-size: 30px;
     }
