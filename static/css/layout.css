@@ -242,6 +242,23 @@ img {
     .box {
         height: 230px;
     }
+
+    .project-img{
+        width: 4rem !important;
+    }
+
+}
+
+@media (max-width:375px){
+    .box-title{
+        font-size: 23px;
+    }
+}
+
+@media (min-width:376px){
+    .box-title{
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 950px) and (min-width: 450px ) {
@@ -302,7 +319,6 @@ img {
 
 .box-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
     color: white !important;
     margin-bottom: 4px;
 }
