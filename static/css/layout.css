@@ -247,7 +247,7 @@ img {
 @media (max-width: 950px) and (min-width: 450px ) {
     .box {
         text-align: center;
-        min-height: 250px;
+        min-height: 280px;
     }
 }
 
