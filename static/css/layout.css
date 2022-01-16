@@ -29,7 +29,7 @@ html {
 
 .section-description{
     max-width: 1000px !important;
-    min-width: 500px !important;
+    min-width: 6rem !important;
     line-height: 30px;
     display: block;
     margin-block-start: 1em;
@@ -240,7 +240,7 @@ img {
 
 @media (max-width: 450px) {
     .box {
-        height: 200px;
+        height: 230px;
     }
 }
 
