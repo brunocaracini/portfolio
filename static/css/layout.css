@@ -168,14 +168,15 @@ html {
         width: 93% !important;
     }
 
-    .img-col{
-        display: none !important;
-    }
-
     .main{
         min-height: 650px !important;
     }
-    
+}
+
+@media (max-width:1150px){
+    .img-col{
+        display: none !important;
+    }
 }
 
 @media (min-width:900px){
@@ -241,12 +242,6 @@ h1:last-of-type {
     color: var(--varyDarkBlue);
 }
 
-@media (max-width: 400px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
 .header {
     text-align: center;
     line-height: 0.8;
@@ -308,8 +303,8 @@ img {
 
 @media (max-width: 950px) and (min-width: 450px ) {
     .box {
-        text-align: center;
-        min-height: 280px;
+        text-align: left;
+        height: 14rem !important;
     }
 }
 
