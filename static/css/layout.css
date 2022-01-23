@@ -3,6 +3,11 @@ body{
     background-color: #1F2235 !important;
 }
 
+a{
+    text-decoration: none !important;
+    color: transparent !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -52,6 +57,7 @@ html {
     --varyDarkBlue: hsl(234, 12%, 34%);
     --grayishBlue: hsl(229, 6%, 66%);
     --veryLightGray: hsl(0, 0%, 98%);
+    --lightBlue: #229ED9;
     --ecoAsistenteGreen: #95C22B; 
     --highlightColor: #20a39d;
     --weight1: 200;
@@ -274,7 +280,7 @@ h1:last-of-type {
 }
 
 
-@media (max-width: 450px) {
+@media (min-width: 375px) and (max-width: 450px) {
 
     .project-img{
         width: 3.8rem !important;
@@ -284,6 +290,15 @@ h1:last-of-type {
         height: 14rem !important;
     }
 
+    .box-description{
+        margin-bottom: -10px !important;
+    }
+}
+
+@media (max-width: 358px){
+    .technologies a{
+        display: none !important;
+    }
 }
 
 @media (max-width:375px){
@@ -296,6 +311,10 @@ h1:last-of-type {
 
     .box {
         height: 12rem !important;
+    }
+
+    .box-description{
+        margin-bottom: -15px !important;
     }
 }
 
@@ -313,20 +332,24 @@ h1:last-of-type {
 }
 
 .cyan {
-    border-top: 3px solid var(--cyan);
+    background-color: var(--cyan);
 }
+.lightblue{
+    background-color: var(--lightBlue);
+}
+
 .red {
-    border-top: 3px solid var(--red);
+    background-color: var(--red);
 }
 .blue {
-    border-top: 3px solid var(--blue);
+    background-color: var(--blue);
 }
 .orange {
-    border-top: 3px solid var(--orange);
+    background-color: var(--orange);
 }
 
 .green{
-    border-top: 3px solid var(--ecoAsistenteGreen);
+    background-color: var(--ecoAsistenteGreen);
 }
 
 @media (min-width: 950px) {
@@ -358,7 +381,7 @@ h1:last-of-type {
 }
 
 .project-img{
-    width: 75px;
+    width: 70px;
     margin-bottom: 30px !important;
 }
 
@@ -366,6 +389,7 @@ h1:last-of-type {
     font-family: 'Poppins', sans-serif;
     color: white !important;
     margin-bottom: 4px;
+    font-size: 25px;
 }
 
 .box-description{
@@ -380,7 +404,7 @@ h1:last-of-type {
 	height: 35px;
 	border-radius: 100%;
 	margin-right: -3px; /*space between*/
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 } 
 
 .technologies a i:hover{
@@ -392,6 +416,8 @@ h1:last-of-type {
 	font-size: 22px;
     line-height: 25px;
 	color: var(--grayishBlue) !important;
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .box .after {
@@ -404,6 +430,8 @@ h1:last-of-type {
     border-radius: 0 0 0.8rem 0.8rem;
 }
 
-.box .after {
-    background: #e31f71;
-}
+/* .box:hover{
+    background-color: var(--highlightColor) !important;
+    transition: background-color .2s ease-in !important;
+    cursor: pointer
+} */
