@@ -430,8 +430,6 @@ h1:last-of-type {
     border-radius: 0 0 0.8rem 0.8rem;
 }
 
-/* .box:hover{
-    background-color: var(--highlightColor) !important;
-    transition: background-color .2s ease-in !important;
-    cursor: pointer
-} */
+.box:hover{
+    cursor: pointer;
+}
