@@ -1,7 +1,6 @@
 $(".box").hover(function(){
-    
     $(this).find('.after').css({
-        "background-color": '#95C22B',
+        "background-color": $(this).find('.after').attr('color'),
         'transition':'background-color .2s ease-in'
     });
     $(this).css({

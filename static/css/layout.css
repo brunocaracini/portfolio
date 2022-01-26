@@ -424,7 +424,7 @@ h1:last-of-type {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1rem;
+    height: 0.5rem;
     bottom: 0;
     left: 0;
     border-radius: 0 0 0.8rem 0.8rem;
@@ -432,4 +432,101 @@ h1:last-of-type {
 
 .box:hover{
     cursor: pointer;
+}
+
+/* About Me */
+
+.about-me{
+    background-color: rgb(36,38,59);
+}
+
+.img-col-about-me{
+    margin-left: 5% !important;
+}
+
+.text-col{
+    margin-left: -10%;
+}
+
+.title-about-me{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+    margin-top: 30px;
+}
+
+.description-about-me{
+    max-width: 600px !important;
+    min-width: 6rem !important;
+    line-height: 30px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #dfdfdf;
+    text-align: justify;
+}
+
+.subtitle-about{
+    color: var(--highlightColor);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 15px !important;
+}
+
+.about-me .email{
+    margin-top: -15px !important;
+    line-height: 30px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #dfdfdf;
+    text-align: justify;
+}
+
+.cv-button{
+    border: 2px solid var(--highlightColor);
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 13px 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: transparent;
+    margin-top: 20px;
+    background-color: var(--highlightColor);
+    margin-bottom: 20px;
+}
+
+@media (min-width:1100px) and (max-width:1300px){
+    .img-col-about-me{
+        margin-left: -10% !important;
+    }
+}
+
+@media (min-width:760px) and (max-width:1100px){
+    .img-col-about-me{
+        margin-left: -20% !important;
+    }
+
+    .text-col{
+        margin-left: 0%;
+    }
+}
+
+@media (max-width:760px){
+    .text-col{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .img-col-about-me{
+        margin-left: -30% !important;
+    }
 }
